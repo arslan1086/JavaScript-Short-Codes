@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- <input type="button" value="time" onclick="timeset()"> -->
+    <p id="display"></p>
+    <span id="hour"></span>
+    <span id="min"></span>
+    <span id="sec"></span>
+    <span id="timerSpan"></span>
+    
+    <script>
+       function clock()
+       {
+            var today = new Date();
+            var h = today.getHours();
+             
+            var m = today.getMinutes();
+           
+            var s = today.getSeconds();
+            if(h>12){
+               var timespan = 'PM';
+            }else{
+                timespan= 'AM';
+            }
+            if(h >12)
+            {
+             var h = h % 12 ;
+            
+            }
+            document.getElementById("hour").innerHTML=h
+            document.getElementById("min").innerHTML=m
+            document.getElementById("sec").innerHTML=s
+            document.getElementById("timerSpan").innerHTML= timespan
+            
+       }
+ 
+              setInterval(clock, 100);
+            
+
+    
+         
+         
+      </script>
+</body>
+</html>

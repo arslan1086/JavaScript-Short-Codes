@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swaping</title>
+</head>
+<script>
+    var a = prompt('Enter Value of A');
+    var b = prompt('Enter value of B');
+    document.write('A = '+ a + "<br>");
+    document.write('B = '+ b);
+
+    function swap(a,b)
+    {
+       var c = a;
+       var a = b;
+       var b = c;
+       document.write('A = '+ a + "<br>");
+       document.write('B = '+ b);
+
+    }
+</script>
+<body>
+    <input type="button" value="Click To Swap" onclick="swap(a,b);" >
+</body>
+</html>

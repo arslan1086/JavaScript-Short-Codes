@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script>
+        function validate()
+        {
+            var un = document.getElementById("un").value;
+            var pass = document.getElementById("pass").value;
+            if(un == "umar" && pass == "0098")
+            {
+                alert("You Successfully Login");
+                window.open("date.html", "_self");
+            }
+            else
+            {
+                alert("Login failed");
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="">UserName</label>
+    <input type="text" id="un">
+    <br><br>
+    <label for="">Password</label>
+    <input type="password" id="pass">
+    <br><br>
+    <input type="button" value="Login" onclick="validate();">
+</body>
+</html>

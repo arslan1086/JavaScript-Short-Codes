@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function values()
+        {
+            var fname = document.getElementById("fn").value;
+            var mname = document.getElementById("mn").value;
+            var lname = document.getElementById("ln").value;
+            var heading = document.getElementById("display");
+            // console.log(fname);
+            // document.write(fname);
+            heading.innerHTML = fname +" "+ mname + " " + lname ;
+        }
+       
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="fn" placeholder="Enter The First Name" >
+        <br><br>
+        <input type="text" id="mn" placeholder="Enter The Middle Name" >
+        <br><br>
+        <input type="text" id="ln" placeholder="Enter The Lsst Name" >
+        <br><br>
+        <input type="button" value="Click" onclick="values()">
+    </form>
+    <h1 id="display"></h1>
+</body>
+</html>

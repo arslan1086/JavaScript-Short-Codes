@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marksheet</title>
+    <script>
+        var name = prompt('Enter your Name');
+        var rollnum = prompt('Enter your Roll Number');
+        var classs = prompt('Enter your class Name');
+        var math = prompt('Enter your Math Marks');
+        var english = prompt('Enter your English Marks');
+        var urdu = prompt('Enter your Urdu Marks');
+        var computer = prompt('Enter your Computer Marks');
+        var obtainedmarks = parseInt(math) + parseInt(english) + parseInt(urdu) + parseInt(computer);
+        var percentage = obtainedmarks * 100 / 400;
+        document.write('Name= '+name + "<br/>");
+        document.write('Roll Number= '+rollnum + "<br/>");
+        document.write('Class= '+classs + "<br/>");
+        document.write('Your Total Marks are = '+obtainedmarks+ "<br/>");
+        document.write('Your percenatge of Total Marks are = '+percentage+ "<br/>");
+        //for grading 
+        if(percentage >= 80)
+        {
+            document.write('Your grade is = A+');
+        }
+        else if(percentage >= 70)
+        {
+            document.write('Your grade is = A');
+        }
+        else if(percentage >= 60)
+        {
+            document.write('Your grade is = B');
+        }
+        else if(percentage >= 50)
+        {
+            document.write('Your grade is = C');
+        }
+        else if(percentage >= 40)
+        {
+            document.write('Your grade is = D');
+        }
+        else if(percentage >= 33)
+        {
+            document.write('Your grade is = E');
+        }
+        else
+        {
+            document.write('Sorry You are Failed ');
+        }
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

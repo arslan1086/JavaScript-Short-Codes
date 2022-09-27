@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function converter()
+        {
+            var KG = document.getElementById("kg").value;
+            var pounds = KG * 2.2046;
+            var miligrams = KG * 1000000;
+            var ton = KG * 0.0011023;
+            var Ounce = KG * 35.274;
+
+            var p = document.getElementById("p").value = pounds;
+            var ml = document.getElementById("ml").value = miligrams;
+            var ton = document.getElementById("t").value = ton;
+            var o = document.getElementById("o").value = Ounce;
+        }
+        
+    </script>
+</head>
+<body>
+    <center>
+        <table border="4" width="400" height="400">
+            <tr>
+                <th colspan="2">WellCome to Online Weigth Converter</th>
+            </tr>
+            <tr>
+                <td>Kilogram</td>
+                <td><input type="text" id="kg">
+                    <input type="button" value="Convert" onclick="converter()">
+                </td>
+            </tr>
+            <tr>
+                <td>Pounds</td>
+                <td><input type="text" id="p"></td>
+            </tr>
+            <tr>
+                <td>Miligram</td>
+                <td><input type="text" id="ml"></td>
+            </tr>   
+            <tr>
+                <td>Tons</td>
+                <td><input type="text" id="t"></td>
+            </tr>
+            <tr>
+                <td>Ounce</td>
+                <td><input type="text" id="o"></td>
+            </tr>
+        </table>
+    </center>
+    
+</body>
+</html>

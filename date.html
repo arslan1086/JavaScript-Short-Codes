@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // //For object
+        // var n = prompt('Enter car Name');
+        // var c = prompt('Enter car Color');
+        // var p = prompt('Enter car Price');
+        
+
+        // var car = new Object();
+        // car.name = n;
+        // car.color = c;
+        // car.price = p;
+
+        // car.discount = function()
+        // {
+        //     var amount = car.price - 10000;
+        //     document.write(amount);
+        // }
+        // document.write(car.name +" " +car.price + "<br>discount price = ");
+        // car.discount();
+
+        // Date functions
+        function getdate()
+        {
+            var today = new Date();
+            var date = today.getDate();
+            var month = today.getMonth();
+            month++;
+            var year = today.getFullYear();
+            document.write("Today Date is : "+ date + "/" + month + "/" + year); 
+        }
+
+        function changeelement()
+        {
+            var p1 = document.getElementById("para");
+            p1.innerHTML = "New Wellcome Message";
+            p1.style.color= "red";
+            p1.style.backgroundColor="black";
+            p1.style.fontSize='45px';
+            p1.style.textAlign= "center";
+        }
+    </script>
+</head>
+<body>
+    <p id="para">WellCome to the HTML Page</p>
+    <br>
+    <input type="button" value="Date" onclick="getdate();">
+    <br><br><br>
+    <input type="button" value="Date" onclick="changeelement();">
+</body>
+</html>

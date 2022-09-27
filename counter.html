@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        // Function for increasing
+        function increase()
+        {
+            var num1 = document.getElementById("number").innerHTML;
+            var increase = ++num1;
+            document.getElementById("number").innerHTML =increase;
+        }
+         // Function for Decreasing
+         function dicrease()
+        {
+            var num1 = document.getElementById("number").innerHTML;
+            if(num1 <=0)
+            {
+                num1 = ++num1;
+            }
+            var decrease = --num1;
+            document.getElementById("number").innerHTML =decrease;   
+        }
+         // Function for Rest
+         function reset()
+        {  
+            var reset = "0";
+            document.getElementById("number").innerHTML =reset;   
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 40px;">Counter</h1>
+    
+    <h2 style="text-align: center; font-size: 40px;"id="number"  >0</h2>
+    
+    <input style="margin-left: 42.7%; font-size: 20px;" type="button" value="Decrease" onclick="dicrease()" >
+    <input type="button" value="Reset" style="font-size: 20px;" onclick="reset()">
+    <input type="button" value="increase" style="font-size: 20px;" onclick="increase()">
+    
+        
+    
+   
+</body>
+</html>

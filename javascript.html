@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+    <script>
+        // var a= prompt('enter the first number');
+        // var b= prompt('enter the second number');
+        // var c= a * b;
+        // document.write(c);
+        // var a = 20;
+        // var b = 10.5;
+        // var d = parseInt(prompt('Enter your age'));
+        // var Result = (typeof(d) == "number" && (d > 18) ? "Eligible" : "Not Eligible");
+        // document.write(Result+"<br>");
+        // var c = "Umar";
+        // document.write(typeof(c)+"<br>");
+        // if(b<a && b<50)
+        // {
+        //     document.write('a is greater ='+ a);
+        //     document.write(typeof(a));
+        // }
+        // else
+        // {
+        //     document.write('b is greater ='+ b)
+        // }
+
+
+        //forin loop with array
+        // var students = ["Umar", "Zain", "Ali", "Hassan"];
+        
+
+        // var i;
+        // for(i in students)
+        // {
+        //     document.write(students[i]+"<br>");
+        // }
+
+
+        // inilization of array using user
+
+        var students = new Array(4);
+        for(var i = 0; i < students.length; i++)
+        {
+            students[i] = prompt('Enter the name on location '+ i);
+        }
+        for(i in students)
+        {
+            document.write(students[i]+"<br>");
+        }
+        
+    </script>
+</head>
+<body>
+    <!-- <h1>Result is <script>document.write(c);</script></h1> 
+    <input type="button" value="Click ME" onclick="alert('hello JavaScript')"> -->
+</body>
+</html>
